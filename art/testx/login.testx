@@ -1,0 +1,5 @@
+- go to:
+    url: /
+- wait to appear:
+    input: header1
+    timeout: 2000

@@ -1,0 +1,23 @@
+{
+  "name": "appstarter",
+  "version": "0.0.1",
+  "description": "My awesome testx project",
+  "dependencies": {
+    "testx": "^2.6.3",
+    "testx-jasmine-reporters": "^1.1.1",
+    "testx-standard-objects": "^0.1.1",
+    "testx-http-keywords": "^0.14.2"
+  },
+  "scripts": {
+    "test": "protractor conf.coffee",
+    "test-docker": "docker run --rm -it -u `id -u`:`id -g` -v `pwd`:/work --net=host testx/protractor conf.coffee"
+  },
+  "testx": {
+    "logScript": false,
+    "actionTimeout": 5000
+  },
+  "devDependencies": {
+    "protractor": "^5.4.1",
+    "protractor-accessibility-plugin": "^0.3.0"
+  }
+}
